@@ -1,6 +1,7 @@
 from typing import Optional
 from pyspark.sql import SparkSession
 from pyspark.sql.dataframe import DataFrame
+from pyspark.sql.functions import udf
 
 def query_1(actor_films_table: str, actors_table: str, current_year: int, last_year: int) -> str:
     """
